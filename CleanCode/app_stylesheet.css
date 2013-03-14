@@ -1,0 +1,24 @@
+﻿body {
+}
+body {
+	width: 550px;
+	background-color: slategray;
+	color: mintcream;
+}
+
+h1 {
+	text-align: center;
+}
+
+li a {
+}
+
+.left_navigation {
+	width: 200px;
+	height: 100%;
+	float: left;
+	overflow: auto;
+}
+.contents {
+	margin-left: 200px;
+}

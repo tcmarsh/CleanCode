@@ -1,0 +1,14 @@
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCodeTest.dll
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCodeTest.pdb
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCode.dll
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCode.pdb
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\obj\Debug\CleanCodeTest.csprojResolveAssemblyReference.cache
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\obj\Debug\CleanCodeTest.dll
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCodeTest\obj\Debug\CleanCodeTest.pdb
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCodeTest.dll
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCodeTest.pdb
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCode.dll
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\bin\Debug\CleanCode.pdb
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\obj\Debug\CleanCodeTest.csprojResolveAssemblyReference.cache
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\obj\Debug\CleanCodeTest.dll
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCodeTest\obj\Debug\CleanCodeTest.pdb
