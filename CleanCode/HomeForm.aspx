@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomeForm.aspx.cs" Inherits="CleanCode.HomeFrom" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomeForm.aspx.cs" Inherits="CleanCode.HomeForm" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+<head runat="server">
     <title>Clean Code Knowledge Base</title>
 
 	<link rel="stylesheet" type="text/css" href="app_stylesheet.css" />
