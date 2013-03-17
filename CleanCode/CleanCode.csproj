@@ -74,10 +74,12 @@
     <Compile Include="User.cs" />
     <Compile Include="UserFactory.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="App_Data\CleanCode.mdf" />
+    <Content Include="App_Data\CleanCode_log.ldf">
+      <DependentUpon>CleanCode.mdf</DependentUpon>
+    </Content>
     <Content Include="app_stylesheet.css" />
     <Content Include="HomeForm.aspx" />
   </ItemGroup>
