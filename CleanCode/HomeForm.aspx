@@ -7,9 +7,17 @@
     <title>Clean Code Knowledge Base</title>
 
 	<link rel="stylesheet" type="text/css" href="app_stylesheet.css" />
+	<script type="text/javascript" src="home_javascript.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
+	<a href="javascript:login()" class="sign-in" id="sign-in_link">Sign in</a>
+	<div class="sign-in" id="sign-in_div">
+		<label for="emailBox">Email</label>
+		<input type="text" id="emailBox" placeholder="Enter your email address" />
+		<label for="passwordBox">Password</label>
+		<input type="password" id="passwordBox" placeholder="Enter your password" />
+	</div>
     <h1>Clean Code Knowledge Base</h1>
 	<hr />
 	<div class="left_navigation">

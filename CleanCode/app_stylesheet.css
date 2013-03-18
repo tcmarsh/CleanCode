@@ -20,3 +20,12 @@ li a {
 .contents {
 	margin-left: 200px;
 }
+
+.sign-in {
+	position: relative;
+	left: 100%;
+}
+
+#sign-in_div {
+	display: none;
+}

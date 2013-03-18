@@ -84,6 +84,7 @@
     <Content Include="HomeForm.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="home_javascript.js" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
