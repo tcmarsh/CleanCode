@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CleanCodeWiki.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Clean Code Wiki</title>
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet.css" />
+</head>
+<body>
+    <div align="center">
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id ="header">
+            <label id="headerlabel">Clean Code Wiki</label>
+            <br />
+            <label id="loginusername" for="username">User Name:</label>
+            <input type="text" id="username" />         
+            <label id="loginpassword" for="mypassword">Password:</label>
+            <input type="password" id="mypassword" />
+            <div id="links">
+                <a id="login" href="url">Log In</a>
+                <a id="register" href="url">Register</a>
+            </div>
+
+        </div>
+        <div id="searchbar">
+            <label id="searchlabel" for="searchtext">Search</label>
+            <input type="text" id="searchtext" />
+        </div>
+        <div id ="content">
+
+        </div>
+        <div id="footer">
+
+        </div>
+
+    </div>
+    </form>
+    </div>
+</body>
+</html>

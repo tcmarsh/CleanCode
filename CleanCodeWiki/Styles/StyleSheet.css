@@ -1,0 +1,83 @@
+﻿body {
+}
+
+#main {
+    width: 800px;
+    background-color: #fff;
+}
+
+#header {
+    height: 90px;
+    border: 3px solid #000
+}
+
+#headerlabel {
+    margin-left: 25px;
+    font-weight: bold;
+    width: 505px;
+    font-family: Calibri;
+    display: block;
+    font-size: 70px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    float: left;
+}
+
+
+
+#links {
+    float: left;
+    width: 130px;
+    height: 19px;
+    margin-left: 50px;
+}
+
+#login {
+    float: left;
+}
+
+#register {
+    float:right;
+}
+
+#searchbar {
+    height: 50px;
+    border: 3px solid #000;
+    width: 700px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#searchlabel {
+    margin-left: 210px;
+    width: 80px;
+    margin-top: 15px;
+}
+
+#searchtext {
+    width: 200px;
+    margin-top: 15px;
+}
+
+#content {
+    width: 750px;
+    height: 600px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#footer {
+    width: 750px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top:10px;
+}
+
+
+
+
+
+
