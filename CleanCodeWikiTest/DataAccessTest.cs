@@ -16,14 +16,14 @@ namespace CleanCodeWikiTest
             email = "test@test.com";
             password = "testpassword";
 
-            derive = new Rfc2898DeriveBytes(password, 8);
+            derive = new Rfc2898DeriveBytes(password, DataAccess.SALT_LENGTH);
             salt = derive.Salt;
 
             newUser = new user();
             newUser.email = email;
             newUser.last_name = "test";
             newUser.salt = salt;
-            newUser.password = derive.GetBytes(8);
+            newUser.password = derive.GetBytes(DataAccess.KEY_LENGTH);
             newUser.role_id = 3;
 
             newUser = context.users.Add(newUser);
@@ -62,6 +62,20 @@ namespace CleanCodeWikiTest
             }
 
             Assert.IsNull(loginUser);
+        }
+
+        [TestMethod]
+        public void RegisterTest()
+        {
+            user testUser = DataAccess.Register("another" + email, password, "another", null);
+            
+            Assert.IsNotNull(testUser);
+            Assert.AreNotEqual(testUser.email, newUser.email);
+
+            if (testUser != null)
+            {
+                DataAccess.RemoveUser(testUser.id);
+            }
         }
     }
 }
