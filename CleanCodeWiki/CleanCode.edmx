@@ -4,72 +4,21 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="CleanCodeModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CleanCodeModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="CleanCodeModelStoreContainer">
-          <EntitySet Name="article" EntityType="CleanCodeModel.Store.article" store:Type="Tables" Schema="clean_code" />
-          <EntitySet Name="article_tag" EntityType="CleanCodeModel.Store.article_tag" store:Type="Tables" Schema="clean_code" />
-          <EntitySet Name="article_user" EntityType="CleanCodeModel.Store.article_user" store:Type="Tables" Schema="clean_code" />
           <EntitySet Name="role" EntityType="CleanCodeModel.Store.role" store:Type="Tables" Schema="clean_code" />
-          <EntitySet Name="tag" EntityType="CleanCodeModel.Store.tag" store:Type="Tables" Schema="clean_code" />
           <EntitySet Name="user" EntityType="CleanCodeModel.Store.user" store:Type="Tables" Schema="clean_code" />
-          <AssociationSet Name="fk_article_tag" Association="CleanCodeModel.Store.fk_article_tag">
-            <End Role="tag" EntitySet="tag" />
-            <End Role="article_tag" EntitySet="article_tag" />
-          </AssociationSet>
-          <AssociationSet Name="fk_article_writer" Association="CleanCodeModel.Store.fk_article_writer">
-            <End Role="article" EntitySet="article" />
-            <End Role="article_user" EntitySet="article_user" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tagged_article" Association="CleanCodeModel.Store.fk_tagged_article">
-            <End Role="article" EntitySet="article" />
-            <End Role="article_tag" EntitySet="article_tag" />
-          </AssociationSet>
           <AssociationSet Name="fk_user_role" Association="CleanCodeModel.Store.fk_user_role">
             <End Role="role" EntitySet="role" />
             <End Role="user" EntitySet="user" />
           </AssociationSet>
-          <AssociationSet Name="fk_written_article" Association="CleanCodeModel.Store.fk_written_article">
-            <End Role="user" EntitySet="user" />
-            <End Role="article_user" EntitySet="article_user" />
-          </AssociationSet>
         </EntityContainer>
-        <EntityType Name="article">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="title" Type="varchar" Nullable="false" MaxLength="45" />
-          <Property Name="body" Type="blob" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article_tag">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="article_id" Type="int" Nullable="false" />
-          <Property Name="tag_id" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="article_user">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="article_id" Type="int" Nullable="false" />
-          <Property Name="user_id" Type="int" Nullable="false" />
-        </EntityType>
         <EntityType Name="role">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="varchar" Nullable="false" MaxLength="45" />
-          <Property Name="description" Type="varchar" MaxLength="45" />
-        </EntityType>
-        <EntityType Name="tag">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="description" Type="varchar" Nullable="false" MaxLength="45" />
         </EntityType>
         <EntityType Name="user">
@@ -77,49 +26,12 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="first_name" Type="varchar" MaxLength="45" />
           <Property Name="last_name" Type="varchar" Nullable="false" MaxLength="45" />
-          <Property Name="email" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="email" Type="varchar" Nullable="false" MaxLength="45" />
           <Property Name="password" Type="varbinary" Nullable="false" MaxLength="255" />
-          <Property Name="salt" Type="varbinary" Nullable="false" MaxLength="8" />
+          <Property Name="salt" Type="varbinary" Nullable="false" MaxLength="64" />
           <Property Name="role_id" Type="tinyint" Nullable="false" />
         </EntityType>
-        <Association Name="fk_article_tag">
-          <End Role="tag" Type="CleanCodeModel.Store.tag" Multiplicity="1" />
-          <End Role="article_tag" Type="CleanCodeModel.Store.article_tag" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tag">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_tag">
-              <PropertyRef Name="tag_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_article_writer">
-          <End Role="article" Type="CleanCodeModel.Store.article" Multiplicity="1" />
-          <End Role="article_user" Type="CleanCodeModel.Store.article_user" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_user">
-              <PropertyRef Name="article_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_tagged_article">
-          <End Role="article" Type="CleanCodeModel.Store.article" Multiplicity="1" />
-          <End Role="article_tag" Type="CleanCodeModel.Store.article_tag" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_tag">
-              <PropertyRef Name="article_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_user_role">
           <End Role="role" Type="CleanCodeModel.Store.role" Multiplicity="1" />
           <End Role="user" Type="CleanCodeModel.Store.user" Multiplicity="*" />
@@ -132,162 +44,43 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_written_article">
-          <End Role="user" Type="CleanCodeModel.Store.user" Multiplicity="1" />
-          <End Role="article_user" Type="CleanCodeModel.Store.article_user" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="user">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_user">
-              <PropertyRef Name="user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CleanCodeModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="CleanCodeEntities" p1:LazyLoadingEnabled="true">
-          <EntitySet Name="articles" EntityType="CleanCodeModel.article" />
-          <EntitySet Name="article_tag" EntityType="CleanCodeModel.article_tag" />
-          <EntitySet Name="article_user" EntityType="CleanCodeModel.article_user" />
           <EntitySet Name="roles" EntityType="CleanCodeModel.role" />
-          <EntitySet Name="tags" EntityType="CleanCodeModel.tag" />
           <EntitySet Name="users" EntityType="CleanCodeModel.user" />
-          <AssociationSet Name="fk_article_writer" Association="CleanCodeModel.fk_article_writer">
-            <End Role="article" EntitySet="articles" />
-            <End Role="article_user" EntitySet="article_user" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tagged_article" Association="CleanCodeModel.fk_tagged_article">
-            <End Role="article" EntitySet="articles" />
-            <End Role="article_tag" EntitySet="article_tag" />
-          </AssociationSet>
-          <AssociationSet Name="fk_article_tag" Association="CleanCodeModel.fk_article_tag">
-            <End Role="tag" EntitySet="tags" />
-            <End Role="article_tag" EntitySet="article_tag" />
-          </AssociationSet>
-          <AssociationSet Name="fk_written_article" Association="CleanCodeModel.fk_written_article">
-            <End Role="user" EntitySet="users" />
-            <End Role="article_user" EntitySet="article_user" />
-          </AssociationSet>
           <AssociationSet Name="fk_user_role" Association="CleanCodeModel.fk_user_role">
             <End Role="role" EntitySet="roles" />
             <End Role="user" EntitySet="users" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="article">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="title" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Type="Binary" Name="body" Nullable="false" MaxLength="Max" FixedLength="false" />
-          <NavigationProperty Name="article_user" Relationship="CleanCodeModel.fk_article_writer" FromRole="article" ToRole="article_user" />
-          <NavigationProperty Name="article_tag" Relationship="CleanCodeModel.fk_tagged_article" FromRole="article" ToRole="article_tag" />
-        </EntityType>
-        <EntityType Name="article_tag">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Int32" Name="article_id" Nullable="false" />
-          <Property Type="Int32" Name="tag_id" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="CleanCodeModel.fk_tagged_article" FromRole="article_tag" ToRole="article" />
-          <NavigationProperty Name="tag" Relationship="CleanCodeModel.fk_article_tag" FromRole="article_tag" ToRole="tag" />
-        </EntityType>
-        <EntityType Name="article_user">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Int32" Name="article_id" Nullable="false" />
-          <Property Type="Int32" Name="user_id" Nullable="false" />
-          <NavigationProperty Name="article" Relationship="CleanCodeModel.fk_article_writer" FromRole="article_user" ToRole="article" />
-          <NavigationProperty Name="user" Relationship="CleanCodeModel.fk_written_article" FromRole="article_user" ToRole="user" />
-        </EntityType>
         <EntityType Name="role">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Type="SByte" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="name" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="description" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="SByte" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="description" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="users" Relationship="CleanCodeModel.fk_user_role" FromRole="role" ToRole="user" />
-        </EntityType>
-        <EntityType Name="tag">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="description" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="article_tag" Relationship="CleanCodeModel.fk_article_tag" FromRole="tag" ToRole="article_tag" />
         </EntityType>
         <EntityType Name="user">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="first_name" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="last_name" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="email" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Type="Binary" Name="password" Nullable="false" MaxLength="Max" FixedLength="false" />
-          <Property Type="Binary" Name="salt" Nullable="false" MaxLength="Max" FixedLength="false" />
-          <Property Type="SByte" Name="role_id" Nullable="false" />
-          <NavigationProperty Name="article_user" Relationship="CleanCodeModel.fk_written_article" FromRole="user" ToRole="article_user" />
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="last_name" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="salt" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="role_id" Type="SByte" Nullable="false" />
           <NavigationProperty Name="role" Relationship="CleanCodeModel.fk_user_role" FromRole="user" ToRole="role" />
         </EntityType>
-        <Association Name="fk_article_writer">
-          <End Type="CleanCodeModel.article" Role="article" Multiplicity="1" />
-          <End Type="CleanCodeModel.article_user" Role="article_user" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_user">
-              <PropertyRef Name="article_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_tagged_article">
-          <End Type="CleanCodeModel.article" Role="article" Multiplicity="1" />
-          <End Type="CleanCodeModel.article_tag" Role="article_tag" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="article">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_tag">
-              <PropertyRef Name="article_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_article_tag">
-          <End Type="CleanCodeModel.tag" Role="tag" Multiplicity="1" />
-          <End Type="CleanCodeModel.article_tag" Role="article_tag" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tag">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_tag">
-              <PropertyRef Name="tag_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_written_article">
-          <End Type="CleanCodeModel.user" Role="user" Multiplicity="1" />
-          <End Type="CleanCodeModel.article_user" Role="article_user" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="user">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="article_user">
-              <PropertyRef Name="user_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_user_role">
-          <End Type="CleanCodeModel.role" Role="role" Multiplicity="1" />
-          <End Type="CleanCodeModel.user" Role="user" Multiplicity="*" />
+          <End Role="role" Type="CleanCodeModel.role" Multiplicity="1" />
+          <End Role="user" Type="CleanCodeModel.user" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="role">
               <PropertyRef Name="id" />
@@ -303,60 +96,24 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="CleanCodeModelStoreContainer" CdmEntityContainer="CleanCodeEntities">
-          <EntitySetMapping Name="articles">
-            <EntityTypeMapping TypeName="CleanCodeModel.article">
-              <MappingFragment StoreEntitySet="article">
-                <ScalarProperty Name="body" ColumnName="body" />
-                <ScalarProperty Name="title" ColumnName="title" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="article_tag">
-            <EntityTypeMapping TypeName="CleanCodeModel.article_tag">
-              <MappingFragment StoreEntitySet="article_tag">
-                <ScalarProperty Name="tag_id" ColumnName="tag_id" />
-                <ScalarProperty Name="article_id" ColumnName="article_id" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="article_user">
-            <EntityTypeMapping TypeName="CleanCodeModel.article_user">
-              <MappingFragment StoreEntitySet="article_user">
-                <ScalarProperty Name="user_id" ColumnName="user_id" />
-                <ScalarProperty Name="article_id" ColumnName="article_id" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="roles">
             <EntityTypeMapping TypeName="CleanCodeModel.role">
               <MappingFragment StoreEntitySet="role">
-                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tags">
-            <EntityTypeMapping TypeName="CleanCodeModel.tag">
-              <MappingFragment StoreEntitySet="tag">
                 <ScalarProperty Name="description" ColumnName="description" />
-                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="users">
             <EntityTypeMapping TypeName="CleanCodeModel.user">
               <MappingFragment StoreEntitySet="user">
-                <ScalarProperty Name="role_id" ColumnName="role_id" />
-                <ScalarProperty Name="salt" ColumnName="salt" />
-                <ScalarProperty Name="password" ColumnName="password" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="last_name" ColumnName="last_name" />
-                <ScalarProperty Name="first_name" ColumnName="first_name" />
                 <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="salt" ColumnName="salt" />
+                <ScalarProperty Name="role_id" ColumnName="role_id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

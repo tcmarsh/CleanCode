@@ -4,18 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e372bb950cf648fcb097a4767c4810d6" Name="Diagram1">
-        <EntityTypeShape EntityType="CleanCodeModel.article" Width="1.5" PointX="5.91725143506995" PointY="25.736538034741088" />
-        <EntityTypeShape EntityType="CleanCodeModel.article_tag" Width="1.5" PointX="9.5808500803917873" PointY="7.5140044724168273" />
-        <EntityTypeShape EntityType="CleanCodeModel.article_user" Width="1.5" PointX="9.7963303596695575" PointY="11.744302293166658" />
-        <EntityTypeShape EntityType="CleanCodeModel.role" Width="1.5" PointX="11.834800165069662" PointY="2.38335487357497" />
-        <EntityTypeShape EntityType="CleanCodeModel.tag" Width="1.5" PointX="4.9452389538964443" PointY="31.383928402971442" />
-        <EntityTypeShape EntityType="CleanCodeModel.user" Width="1.5" PointX="11.36071469791267" PointY="14.953654072691526" />
-        <AssociationConnector Association="CleanCodeModel.fk_article_writer" />
-        <AssociationConnector Association="CleanCodeModel.fk_tagged_article" />
-        <AssociationConnector Association="CleanCodeModel.fk_article_tag" />
-        <AssociationConnector Association="CleanCodeModel.fk_written_article" />
-        <AssociationConnector Association="CleanCodeModel.fk_user_role" />
+      <Diagram DiagramId="202625d48da44f55836c86c50a19eb0e" Name="Diagram1">
+        <EntityTypeShape EntityType="CleanCodeModel.role" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CleanCodeModel.user" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="CleanCodeModel.fk_user_role" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

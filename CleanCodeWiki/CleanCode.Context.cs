@@ -25,11 +25,7 @@ namespace CleanCodeWiki
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<article> articles { get; set; }
-        public DbSet<article_tag> article_tag { get; set; }
-        public DbSet<article_user> article_user { get; set; }
         public DbSet<role> roles { get; set; }
-        public DbSet<tag> tags { get; set; }
         public DbSet<user> users { get; set; }
     }
 }
