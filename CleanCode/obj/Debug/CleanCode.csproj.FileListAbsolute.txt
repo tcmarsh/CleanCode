@@ -1,0 +1,13 @@
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCode\bin\CleanCode.dll
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCode\bin\CleanCode.pdb
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.csprojResolveAssemblyReference.cache
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.dll
+c:\users\scott\documents\visual studio 11\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.pdb
+C:\Users\Thantos\Documents\Visual Studio 2010\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.csprojResolveAssemblyReference.cache
+C:\Users\Thantos\Documents\Visual Studio 2010\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.dll
+C:\Users\Thantos\Documents\Visual Studio 2010\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.pdb
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCode\bin\CleanCode.dll
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCode\bin\CleanCode.pdb
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.csprojResolveAssemblyReference.cache
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.dll
+C:\Users\Trevor\Documents\Visual Studio 2012\Projects\CleanCode\CleanCode\obj\Debug\CleanCode.pdb
