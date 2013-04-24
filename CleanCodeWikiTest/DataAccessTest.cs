@@ -29,6 +29,18 @@ namespace CleanCodeWikiTest
             newUser = context.users.Add(newUser);
             context.SaveChanges();
         }
+		[TestCleanup]
+		public void Cleanup()
+		{
+			var users = from u in context.users
+						where u.email == email
+						select u;
+			foreach (user user in users)
+			{
+				context.users.Remove(user);
+			}
+			context.SaveChanges();
+		}
        
         private string email;
         private string password;

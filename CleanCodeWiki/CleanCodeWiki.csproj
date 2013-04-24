@@ -310,15 +310,6 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="article.cs">
-      <DependentUpon>CleanCode.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article_tag.cs">
-      <DependentUpon>CleanCode.tt</DependentUpon>
-    </Compile>
-    <Compile Include="article_user.cs">
-      <DependentUpon>CleanCode.tt</DependentUpon>
-    </Compile>
     <Compile Include="CleanCode.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -369,6 +360,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
@@ -389,9 +381,6 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="tag.cs">
-      <DependentUpon>CleanCode.tt</DependentUpon>
     </Compile>
     <Compile Include="user.cs">
       <DependentUpon>CleanCode.tt</DependentUpon>

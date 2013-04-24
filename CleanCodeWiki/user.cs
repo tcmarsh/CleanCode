@@ -14,20 +14,13 @@ namespace CleanCodeWiki
     
     public partial class user
     {
-        public user()
-        {
-            this.article_user = new HashSet<article_user>();
-        }
-    
         public int id { get; set; }
-        public string first_name { get; set; }
         public string last_name { get; set; }
         public string email { get; set; }
         public byte[] password { get; set; }
         public byte[] salt { get; set; }
         public sbyte role_id { get; set; }
     
-        public virtual ICollection<article_user> article_user { get; set; }
         public virtual role role { get; set; }
     }
 }
