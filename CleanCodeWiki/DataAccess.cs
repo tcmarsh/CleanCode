@@ -79,6 +79,7 @@ namespace CleanCodeWiki
             {
                 context.users.Remove(row);
             }
+			context.SaveChanges();
         }
     }
 }
