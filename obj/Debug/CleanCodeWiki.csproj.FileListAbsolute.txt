@@ -67,15 +67,5 @@ C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\CleanCo
 C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\CleanCodeWiki.pdb
 C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\EntityFramework.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\DotNetOpenAuth.Core.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.Consumer.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\DotNetOpenAuth.AspNet.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\Microsoft.AspNet.Membership.OpenAuth.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\obj\Debug\CleanCodeWiki.csprojResolveAssemblyReference.cache
 C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\obj\Debug\CleanCodeWiki.dll
 C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\obj\Debug\CleanCodeWiki.pdb

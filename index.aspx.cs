@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Text.RegularExpressions;
 
 namespace CleanCodeWiki
 {
@@ -23,17 +24,17 @@ namespace CleanCodeWiki
             usrname = IsEmail(username.Value) ? username.Value : string.Empty;
             pass = mypassword.Value;
 
-            if (usrname == string.Empty || pass == string.empty)
+            if (usrname == string.Empty || pass == string.Empty)
             {
                 //set invalid label
                 return;
             }
 
-            User user = LogIn(usrname, pass);
-            if (user.HasValue)
-            {
+            //User user = LogIn(usrname, pass);
+            //if (user.HasValue)
+            //{
 
-            }
+            //}
             
         }
 
@@ -49,9 +50,10 @@ namespace CleanCodeWiki
             }
         }
 
-        private bool IsEmail(string usrname)
+        private bool IsEmail( string usrname)
         {
             //test for email string
+            return true;
         }
     }
 }
