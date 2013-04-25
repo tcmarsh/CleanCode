@@ -28,7 +28,7 @@ namespace CleanCodeWiki
                 errorLabel.Text = "Passwords are required and must match.";
                 return;
             }
-            else if (string.IsNullOrEmpty(lastName.Value))
+            else if (string.IsNullOrEmpty(regLastName.Value))
             {
                 errorLabel.Text = "Last name is a required field";
                 return;
@@ -36,7 +36,7 @@ namespace CleanCodeWiki
             else
             {
                 errorLabel.Visible = false;
-                user user = DataAccess.Register(regUserName.Value, regPassword.Value, lastName.Value, null);
+                user user = DataAccess.Register(regUserName.Value, regPassword.Value, regLastName.Value, null);
                 Server.Transfer(string.Format("index.aspx?newRegisteredUserName={0}", user.last_name));
             }
         }

@@ -344,6 +344,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FactoryInterface.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -389,6 +390,7 @@
     <Compile Include="user.cs">
       <DependentUpon>CleanCode.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserFactory.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

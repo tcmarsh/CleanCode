@@ -17,6 +17,7 @@ namespace CleanCodeWiki
             {
                 userloggedin.Visible = true;
                 userloggedin.Text = string.Format("Welcome {0}!", newUserName);
+				login.Text = "Log out";
             }
             login.Click += Login_Click;
             register.Click += Register_Click;

@@ -40,13 +40,13 @@ namespace CleanCodeWiki {
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword regConfirmPassword;
         
         /// <summary>
-        /// lastName control.
+        /// regLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText lastName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText regLastName;
         
         /// <summary>
         /// submitregistration control.

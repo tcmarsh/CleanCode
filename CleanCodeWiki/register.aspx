@@ -20,7 +20,7 @@
         <input type="password" id="regPassword" runat="server"/><br />
         <label id="lbregConfirmPassword" for="regConfirmPassword" >Confirm Password:</label>
         <input type="password" id="regConfirmPassword" runat="server"/><br />
-        <label id="lbregLastName" for="lastName" >Last Name:</label>
+        <label id="lbregLastName" for="regLastName" >Last Name:</label>
         <input type="text" id="regLastName" runat="server" /><br />
         <br /><br />
         <asp:Button id="submitregistration" runat="server" Text="Register" />

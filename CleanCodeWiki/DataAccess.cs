@@ -55,15 +55,8 @@ namespace CleanCodeWiki
                     "Email, password, and last name must be entered");
             }
 
-            Rfc2898DeriveBytes derive = new Rfc2898DeriveBytes(password, SALT_LENGTH);
-
-            registeredUser = new user();
-            registeredUser.email = email;
-            registeredUser.last_name = lastName;
-            registeredUser.password = derive.GetBytes(KEY_LENGTH);
-            registeredUser.salt = derive.Salt;
-            registeredUser.role_id = roleId;
-
+            registeredUser = UserFactory.createUser(email, password, lastName, roleId);
+            
             context.users.Add(registeredUser);
             context.SaveChanges();
 
