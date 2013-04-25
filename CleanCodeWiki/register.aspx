@@ -15,14 +15,15 @@
     </div><br />
     <div id="registerinfo">
         <label id="lbregUserName" for="regUserName">Username (E-mail Address):</label>
-        <input type="text" id="regUserName" /><br />
-        <label id="lbregLastName" for="regLastName" >Last Name:</label>
-        <input type="text" id="regLastName" /><br />
+        <input type="text" id="regUserName" runat="server"/><br />
         <label id="lbregPassword" for="regPassword" >Password:</label>
-        <input type="password" id="regPassword" /><br />
-        <label id="lbconfirmPassword" for="regConfirmPassword" >Confirm Password:</label>
-        <input type="password" id="regConfirmPassword" />
+        <input type="password" id="regPassword" runat="server"/><br />
+        <label id="lbregConfirmPassword" for="regConfirmPassword" >Confirm Password:</label>
+        <input type="password" id="regConfirmPassword" runat="server"/><br />
+        <label id="lbregLastName" for="lastName" >Last Name:</label>
+        <input type="text" id="regLastName" runat="server" /><br />
         <br /><br />
-        <button type="button" id="submitregistration" >Register</button>
+        <asp:Button id="submitregistration" runat="server" Text="Register" />
+        <asp:Label ID="errorLabel" runat="server" Visible="False" ></asp:Label>
     </div>
 </asp:Content>
