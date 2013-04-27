@@ -141,14 +141,14 @@ label {
     margin-left: -100px;
 }
 
-#lbconfirmPassword {
+#lbregConfirmPassword {
     width: 190px;
     display: inline-block;
     text-align: left;
 }
 
 #regConfirmPassword {
-    margin-left: -95px;
+    margin-left: -50px;
 }
 
 #submitregistration {
@@ -167,8 +167,8 @@ label {
     margin-top: 5px;
 }
 
-#mypassword {
-    margin-left: 23px;
+#ContentPlacHholder2_mypassword {
+    margin-left: 27px;
 }
 
 #logininfo {

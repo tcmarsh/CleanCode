@@ -21,7 +21,7 @@ namespace CleanCodeWiki
                 //error label set to visible
                 return;
             }
-            Register(regUserName.Value, regPassword.Value);
+            //Register(regUserName.Value, regPassword.Value);
             //redirect to home page with label set to username.
         }
     }

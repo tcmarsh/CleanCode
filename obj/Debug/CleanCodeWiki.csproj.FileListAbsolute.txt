@@ -1,0 +1,71 @@
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\CleanCodeWiki.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\CleanCodeWiki.pdb
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Antlr3.Runtime.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.Core.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\EntityFramework.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\System.Web.Optimization.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\System.Web.Providers.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\WebGrease.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\EntityFramework.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.Core.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.csprojResolveAssemblyReference.cache
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.dll
+C:\Users\Harmons\Documents\GitHub\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.pdb
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\CleanCodeWiki.dll
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\CleanCodeWiki.pdb
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\EntityFramework.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.Core.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.csprojResolveAssemblyReference.cache
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.dll
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.pdb
+C:\Users\Harmons\Dropbox\CleanCode\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\CleanCodeWiki.dll
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\CleanCodeWiki.pdb
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\EntityFramework.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.Core.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.csprojResolveAssemblyReference.cache
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.dll
+C:\Users\Harmons\Desktop\CleanCode\CleanCodeWiki\obj\Debug\CleanCodeWiki.pdb
+C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\CleanCodeWiki.dll
+C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\CleanCodeWiki.pdb
+C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\obj\Debug\CleanCodeWiki.dll
+C:\Users\Thantos\Documents\Visual Studio 2012\Projects\CleanCodeWiki\obj\Debug\CleanCodeWiki.pdb
